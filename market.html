@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Market Store</title>
+    <link rel="stylesheet" href="market.css" />
+  </head>
+  <body>
+      <div class="carts">
+       <h1>კალათაში დამატებული ნივთები</h1>
+        <div class="delete">
+          <button class="button" id="clear">კალათიდან წაშლა</button>
+        </div>
+        <div id="cartitems"></div>
+       <span> საერთო ფასი:</span> <span id="totalPrice"></span>
+      </div>
+       <div class="header">მობილურების ჩამონათვალი</div>
+        <div class="products">
+          <div class="product" 
+          name="Samsung G780FD Galaxy" 
+          price="1899" 
+          id="0">
+            <img src="1.png" alt="" />
+            <h3>Samsung G780FD Galaxy S20 FE Dual Sim 8GB RAM 128GB Red</h3>
+            <p>ფასი: 1899 ლარი</p>
+            <input type="number" class="count" value="1" />
+            <button class="butt">კალათაში დამატება</button>
+          </div>
+          <div class="product" 
+          name="Apple iPhone 12 Pro Max" 
+          price="4949" 
+          id="1">
+            <img src="2.png" alt="" />
+            <h3>Apple iPhone 12 Pro Max Single Sim 128GB Gold</h3>
+            <p>ფასი: 4949 ლარი</p>
+            <input type="number" class="count" value="1" />
+            <button class="butt">კალათაში დამატება</button>
+          </div>
+          <div class="product" 
+          name="Google Pixel 4 XL" 
+          price="2599" 
+          id="2">
+            <img src="3.png" alt="" />
+            <h3>Google Pixel 4 XL Single sim 6GB RAM 64GB LTE black</h3>
+            <p>ფასი: 2599 ლარი</p>
+            <input type="number" class="count" value="1" />
+            <button class="butt">კალათაში დამატება</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/template" id="cart">
+        <% _.each(items, function (item)
+        { %> <div class = "item"> <h2> <%= item.name %> </h2>  <span class="text">
+      <%= item.count %> ცალი<% if(item.count > 1)
+      {%>
+      <%}%>  <%= item.total %> ლარი</span > </div>
+      <% }); %>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="market.js"></script>
+  </body>
+</html>

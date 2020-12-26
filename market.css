@@ -1,0 +1,77 @@
+h1 {
+  display: flex;
+  color: #7e2121;
+  align-items: center;
+  justify-content: space-around;
+}
+.carts {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  align-items: center;
+  box-shadow: 19px 20px 5px rgb(56, 160, 163);
+}
+.button {
+  background: rgb(161, 116, 31);
+  outline: none;
+  color: rgb(34, 60, 116);
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.butt {
+  color: rgb(158, 56, 56);
+  text-align: center;
+  font: normal 700 24px/1 "Open Sans", sans-serif;
+  text-align: center;
+  margin-left: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6d34;
+}
+
+.butt:hover {
+  background-color: blue;
+  color: #fff;
+}
+#clear:hover {
+  background-color: #ff6d34;
+  color: #fff;
+}
+p {
+  color: rgb(44, 27, 141);
+  font-weight: bold;
+}
+span {
+  color: orange;
+  font-size: 30px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+input {
+  width: 15%;
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 23px;
+  color: red;
+  padding: 10px 20px;
+}
+img {
+  width: 380px;
+  height: 380px;
+}
